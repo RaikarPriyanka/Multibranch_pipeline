@@ -1,18 +1,17 @@
-pipeline{
+pipeline {
     agent any
+    
     stages{
         
-        stage('build')
-        {
+        stage('build') {
             steps{
-                echo "Hellow World"
+                echo "Building"
             }
         }
-        stage('test')
-        {
+        stage('test'){
             steps{
                 echo "Testing "
             }
         }
-      }
-      }
+     }
+  }
