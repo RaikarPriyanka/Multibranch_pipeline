@@ -1,4 +1,5 @@
 pipeline{
+    agent any
     stages{
         
         stage('build')
@@ -7,6 +8,11 @@ pipeline{
                 echo "Hellow World"
             }
         }
-        
+        stage('test')
+        {
+            steps{
+                echo "Testing "
+            }
+        }
       }
       }
