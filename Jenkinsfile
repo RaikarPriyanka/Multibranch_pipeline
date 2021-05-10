@@ -1,5 +1,5 @@
-pipeline { agent any
-    
+pipeline {
+    agent{label ' master'}
     stages{
         
         stage('build') {
